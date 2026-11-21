@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Site architecture
+- Keep shared public-site shell and reusable sections in `src/components/site`, with brand content and page datasets in `src/lib/site-data.ts`, so every public route stays consistent and detail pages remain data-driven.
